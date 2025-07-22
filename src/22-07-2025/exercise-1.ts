@@ -8,7 +8,9 @@ function getConcatenation(nums: number[]): number[] {
     ans[i] = nums[i];
     ans[i + n] = nums[i];
   }
-  return ans;
+  // Added sorting in ascending order of array
+  let num: number[] = ans.sort((a, b) => a - b);
+  return num;
 }
 
-console.log(getConcatenation([1, 2, 3]));
+console.log(getConcatenation([2, 50, 3, 10]));
