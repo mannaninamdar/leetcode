@@ -5,5 +5,5 @@ function argumentsLengthNew(...args: JSONValue[]): number {
 };
 
 
-console.log(argumentsLengthNew(1, 3)); // 3
+console.log(argumentsLengthNew(1, 3, 6, {}, [])); // 3
 
